@@ -1,0 +1,311 @@
+<%-include('./includes/head.ejs')%>
+
+<!-- SHOWCASE SLIDER -->
+<section id="showcase">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item carousel-image-1 active">
+        <div class="container">
+          <div class="carousel-caption d-none d-sm-block text-right mb-5">
+            <h1 class="display-3">Revisar la bicicleta antes de salir</h1>
+            <p class="lead">
+              La primer cosa que tenemos que hacer antes de salir a rodar es
+              revisar que la bicicleta se encuentre en buen estado.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item carousel-image-2">
+        <div class="container">
+          <div class="carousel-caption d-none d-sm-block mb-5">
+            <h1 class="display-3">Circula por tu carril</h1>
+            <p class="lead">
+              La bicicleta es un vehículo y al igual que los automóviles tiene
+              el derecho a circular por las vías públicas (calles, avenidas,
+              etc). La bicicleta deberá circular por el carril de la extrema
+              derecha.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item carousel-image-3">
+        <div class="container">
+          <div class="carousel-caption d-none d-sm-block text-right mb-5">
+            <h1 class="display-3">
+              Respetar señales de alto y de ceda el paso
+            </h1>
+            <p class="lead">
+              Es muy impórtate que siempre que veamos una señal indicando “Alto”
+              o “Ceda el Paso” la respetemos. Por seguridad hay que detenernos y
+              asegurarnos que no vengan otros vehículos o peatones antes de
+              continuar nuestro camino.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+
+    <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</section>
+
+<!--HOME ICON SECTION  -->
+<section id="home-icons" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4 text-center">
+        <i class="fas fa-cog fa-3x mb-2"></i>
+        <h3>Cuida tus ruedas</h3>
+        <p>
+          Verifica que tus llantas esten en buen estado todo el tiempo
+        </p>
+      </div>
+      <div class="col-md-4 mb-4 text-center">
+        <i class="fas fa-bicycle fa-3x mb-2"></i>
+        <h3>Conoce nuestas Bicis</h3>
+        <p>
+          Tenemos un gran abasto de bicis en nuestra tienda visitanos para mas
+          información
+        </p>
+      </div>
+      <div class="col-md-4 mb-4 text-center">
+        <i class="fas fa-cart-plus fa-3x mb-2"></i>
+        <h3>Compra Con Nosotros</h3>
+        <p>
+          Tenemos los mejores precios y promociones
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOME HEADING SECTION -->
+<section id="home-heading" class="p-5">
+  <div class="dark-overlay">
+    <div class="row">
+      <div class="col">
+        <div class="container pt-5">
+          <h1>¿Estas listo para empezar?</h1>
+          <p class="d-none d-md-block">
+            Nuestra salud y seguridad son primordiales para poder desarrollar
+            habilidades nuevas y mejorar en nuestro rendimiento, por eso te
+            damos estos consejos
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INFO SECTION -->
+<section id="info" class="py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 align-self-center">
+        <h3>Nuestro equipo</h3>
+        <p>
+          Contamos con un equipo de guías e instructores profesionales, con gran
+          experiencia como ciclistas de montaña al más alto nivel, conocimientos
+          de primeros auxilios, y una enorme pasión por el ciclismo y la
+          recreación al aire libre.
+        </p>
+        <a href="about.html" class="btn btn-outline-danger btn-lg"
+          >Conoce Mas</a
+        >
+      </div>
+      <div class="col-md-6">
+        <img src="img/laptop.png" alt="" class="img-fluid" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO PLAY -->
+<section id="video-play">
+  <div class="dark-overlay">
+    <div class="row">
+      <div class="col">
+        <div class="container p-5">
+          <a
+            href="#"
+            class="video"
+            data-video="https://www.youtube.com/embed/K_7k3fnxPq0"
+            data-toggle="modal"
+            data-target="#videoModal"
+          >
+            <i class="fas fa-play fa-3x"></i>
+          </a>
+          <h1>Mira lo que hacemos</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO GALLERY -->
+<section id="gallery" class="py-5">
+  <div class="container">
+    <h1 class="text-center">Catalogo de Bicicletas</h1>
+    <p class="text-center">Nuestra pasión</p>
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <a
+          href="https://source.unsplash.com/560x560/?bike,cycling"
+          data-toggle="lightbox"
+          data-gallery="img-gallery"
+          data-height="560"
+          data-width="560"
+        >
+          <img
+            src="https://source.unsplash.com/561x560/?bike,cycling"
+            alt=""
+            class="img-fluid"
+          />
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a
+          href="https://source.unsplash.com/562x560/?bike,cycling"
+          data-toggle="lightbox"
+          data-gallery="img-gallery"
+          data-height="561"
+          data-width="561"
+        >
+          <img
+            src="https://source.unsplash.com/563x560/?bike,cycling"
+            alt=""
+            class="img-fluid"
+          />
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a
+          href="https://source.unsplash.com/564x560/?bike,cycling"
+          data-toggle="lightbox"
+          data-gallery="img-gallery"
+          data-height="562"
+          data-width="562"
+        >
+          <img
+            src="https://source.unsplash.com/565x560/?bike,cycling"
+            alt=""
+            class="img-fluid"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <a
+          href="https://source.unsplash.com/566x560/?bike,cycling"
+          data-toggle="lightbox"
+          data-gallery="img-gallery"
+          data-height="563"
+          data-width="563"
+        >
+          <img
+            src="https://source.unsplash.com/567x560/?bike,cycling"
+            alt=""
+            class="img-fluid"
+          />
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a
+          href="https://source.unsplash.com/568x560/?bike,cycling"
+          data-toggle="lightbox"
+          data-gallery="img-gallery"
+          data-height="564"
+          data-width="564"
+        >
+          <img
+            src="https://source.unsplash.com/569x560/?bike,cycling"
+            alt=""
+            class="img-fluid"
+          />
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a
+          href="https://source.unsplash.com/560x561/?bike,cycling"
+          data-toggle="lightbox"
+          data-gallery="img-gallery"
+          data-height="565"
+          data-width="565"
+        >
+          <img
+            src="https://source.unsplash.com/560x562/?bike,cycling"
+            alt=""
+            class="img-fluid"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section id="newsletter" class="text-center p-5 bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>SUSCRÍBETE PARA RECIBIR LO ÚLTIMO EN:</h1>
+        <p>
+          Lanzamientos, Noticias, Ofertas y Promociones Exclusivas.
+        </p>
+        <form class="form-inline justify-content-center">
+          <input
+            type="text"
+            class="form-control mb-2 mr-2"
+            placeholder="Nombre"
+          />
+          <input
+            type="text"
+            class="form-control mb-2 mr-2"
+            placeholder="Email"
+          />
+          <button class="btn btn-primary mb-2">Hecho</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- VIDEO MODAL -->
+<div class="modal fade" id="videoModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+        <iframe
+          src=""
+          frameborder="0"
+          height="350"
+          width="100%"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%-include('./includes/footer.ejs')%>

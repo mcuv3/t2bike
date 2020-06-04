@@ -1,0 +1,417 @@
+<%-include('./includes/head.ejs')%>
+<!-- PAGE HEADER -->
+<header id="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 m-auto text-center">
+        <h1>Nuestros Servicios</h1>
+        <p>
+          Contamos con distintos servicios, los cuales ofrecen amplios
+          beneficios.
+        </p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card text-center">
+          <div class="card-header bg-dark text-white">
+            <h3>Compra Bicicletas</h3>
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              Comprar bicicletas con nosotros cuenta con diversos beneficios,
+              sin mencionar que tenemos los mejores productos.
+            </p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <i class="fas fa-check"></i> Garantía
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-check"></i> Seguimiento
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-check"></i> Asistencia
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-check"></i> Costo Excelente
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-check"></i> Calidad
+              </li>
+            </ul>
+            <button
+              class="btn btn-danger btn-block mt-2"
+              data-toggle="modal"
+              data-target="#modalad1"
+            >
+              Consultar
+            </button>
+          </div>
+          <div class="card-footer text-muted">
+            Algún moderador se pondrá en concacto contigo de inmediato.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card text-center">
+          <div class="card-header bg-dark text-white">
+            <h3>Reparación Bicicletas</h3>
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              Un mantenimiento y repación es parte fundamental del buen
+              funcionamiento de nuestra bicicleta.
+            </p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <i class="fas fa-check"></i> Garantía
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-check"></i> Seguimiento
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-check"></i> Experiencia
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-check"></i> Profesionalismo
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-check"></i> Asistencia
+              </li>
+            </ul>
+            <button
+              class="btn btn-danger btn-block mt-2"
+              data-toggle="modal"
+              data-target="#modalad2"
+            >
+              Consultar
+            </button>
+          </div>
+          <div class="card-footer text-muted">
+            Algún moderador se pondrá en concacto contigo de inmediato.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal1 -->
+<div
+  class="modal fade"
+  id="modalad1"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          Ingresa los siguientes campos:
+        </h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Nombre</span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Ingrese su nombre."
+                aria-describedby="basic-addon1"
+                id="nombre"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Email</span>
+              </div>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Ingrese su Correo Electrónico."
+                aria-describedby="basic-addon1"
+                id="email"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Celular</span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Ingrese su Número Celular."
+                aria-describedby="basic-addon1"
+                id="celular"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Mensaje</span>
+              </div>
+              <textarea class="form-control" rows="3" id="men"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Cancelar
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-dismiss="modal"
+          id="servicio1"
+        >
+          Guardar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal2 -->
+<div
+  class="modal fade"
+  id="modalad2"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          Ingresa los siguientes campos:
+        </h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Nombre</span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Ingrese su nombre."
+                aria-describedby="basic-addon1"
+                id="nombre1"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Email</span>
+              </div>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Ingrese su Correo Electrónico."
+                aria-describedby="basic-addon1"
+                id="email1"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Celular</span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Ingrese su Número Celular."
+                aria-describedby="basic-addon1"
+                id="celular1"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Mensaje</span>
+              </div>
+              <textarea class="form-control" rows="3" id="men1"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Cancelar
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-dismiss="modal"
+          id="servicio2"
+        >
+          Guardar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<section id="faq" class="p-5 bg-dark text-white">
+  <div class="container">
+    <h1 class="text-center">Preguntas Frecuentes</h1>
+    <hr />
+    <div class="row">
+      <div class="col-md-6">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <a
+                  href="#collapseOne"
+                  data-toggle="collapse"
+                  data-parent="accordion"
+                >
+                  Pregunta 1
+                </a>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse">
+              <div class="card-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt ea officiis distinctio exercitationem dolor minus
+                placeat amet commodi, ab a perspiciatis officia nobis reiciendis
+                numquam totam repudiandae molestias nulla, quod voluptatibus
+                modi rerum laboriosam tenetur. Nihil, soluta eaque? Minima,
+                deserunt.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <a
+                  href="#collapseTwo"
+                  data-toggle="collapse"
+                  data-parent="accordion"
+                >
+                  Pregunta 2
+                </a>
+              </h5>
+            </div>
+
+            <div id="collapseTwo" class="collapse">
+              <div class="card-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt ea officiis distinctio exercitationem dolor minus
+                placeat amet commodi, ab a perspiciatis officia nobis reiciendis
+                numquam totam repudiandae molestias nulla, quod voluptatibus
+                modi rerum laboriosam tenetur. Nihil, soluta eaque? Minima,
+                deserunt.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <a
+                  href="#collapseFour"
+                  data-toggle="collapse"
+                  data-parent="accordion"
+                >
+                  Pregunta 3
+                </a>
+              </h5>
+            </div>
+
+            <div id="collapseFour" class="collapse">
+              <div class="card-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt ea officiis distinctio exercitationem dolor minus
+                placeat amet commodi, ab a perspiciatis officia nobis reiciendis
+                numquam totam repudiandae molestias nulla, quod voluptatibus
+                modi rerum laboriosam tenetur. Nihil, soluta eaque? Minima,
+                deserunt.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <a
+                  href="#collapseFive"
+                  data-toggle="collapse"
+                  data-parent="accordion"
+                >
+                  Pregunta 4
+                </a>
+              </h5>
+            </div>
+
+            <div id="collapseFive" class="collapse">
+              <div class="card-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt ea officiis distinctio exercitationem dolor minus
+                placeat amet commodi, ab a perspiciatis officia nobis reiciendis
+                numquam totam repudiandae molestias nulla, quod voluptatibus
+                modi rerum laboriosam tenetur. Nihil, soluta eaque? Minima,
+                deserunt.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%-include('./includes/footer.ejs')%>

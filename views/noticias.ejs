@@ -1,0 +1,50 @@
+<%-include('./includes/head.ejs')%>
+<header id="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 m-auto text-center">
+        <h1>Noticias del Ciclismo</h1>
+        <p class="lead text-dark">
+          Checa nuestras noticias al dia del mundo del ciclismo
+        </p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article id="noticias" class="bg-dark">
+  <div class="container">
+    <h1 class="display-4 p-4 text-center text-light">Noticas al Instante</h1>
+  </div>
+  <div class="container">
+    <div class="row bg-light">
+      <% noticias.forEach(noticia=>{ %>
+      <div class="col-md-4 p-4">
+        <div class="card">
+          <img
+            src="<%=noticia.urlToImage%>"
+            class="card-img-top img-fluid"
+            srcset=""
+          />
+          <div class="card-body">
+            <h4 class="card-title"><%=noticia.title%></h4>
+            <p>
+              <%=noticia.content%>
+            </p>
+
+            <a href="<%=noticia.url%>" class="btn btn-secondary btn-sm"
+              >Mas Informacion</a
+            >
+            <p class="card-text">
+              <small class="text-center"><%=noticia.publishedAt%></small>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <%}); %>
+    </div>
+  </div>
+</article>
+
+<%-include('./includes/footer.ejs')%>
